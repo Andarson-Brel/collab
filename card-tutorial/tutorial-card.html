@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>progress bar</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <style media="screen">
+    .body{
+      background-color: #C6DAFF;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 200px;
+    }
+    .skill{
+      width: 160px;
+      height: 160px;
+
+      position: relative;
+    }
+    .outer{
+      box-sizing: border-box;
+      padding: 20px;
+      height: 160px;
+      width: 160px;
+      border-radius: 50%;
+      box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+      -6px -6px 10px -1px rgba(255,255,255,0.7);
+    }
+    .inner{
+      height: 120px;
+      width: 120px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+      inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+      -0.5px -0.5px 0px rgba(255,255,255,1),
+      0.5px 0.5px 0px rgba( 0,0,0,0.15),
+      0px 12px 10px -10px rgba( 0,0,0,0.05);
+
+    }
+    #number{
+      font-weight: 600;
+      color: black;
+      font-size: 30px;
+    }
+    circle{
+
+      fill:none;
+      stroke: url(#linear-gradient);
+      stroke-width: 20px;
+      stroke-dasharray: 430;
+    stroke-dashoffset: 430;
+    animation: anim 2s linear forwards;
+    }
+    @keyframes anim {
+      100%{
+        stroke-dashoffset: 150;
+      }
+
+    }
+    svg{
+      position: absolute;
+      top:0;
+      left: 0;
+    }
+
+    </style>
+  </head>
+  <body class="body">
+<div class="skill">
+  <div class="outer">
+    <div class="inner">
+      <div id="number">
+        65%
+      </div>
+    </div>
+  </div>
+  <svg width="162" height="162" viewBox="0 0 162 162" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g id="progress2">
+  <circle id="progress" cx="81" cy="81" r="70" stroke-linecap="round" fill="url(#paint0_linear_101_1288)"/>
+  </g>
+  <defs>
+  <linearGradient id="linear-gradient" x1="28.7647" y1="38.7625" x2="86.1646" y2="144.935" gradientUnits="userSpaceOnUse">
+  <stop stop-color="#FF0B0B"/>
+  <stop offset="1" stop-color="#760BFF"/>
+  </linearGradient>
+  </defs>
+  </svg>
+</div>
+
+
+  </body>
+</html>
