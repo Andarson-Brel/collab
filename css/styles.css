@@ -55,7 +55,7 @@ li {
   background-color: white;
   padding: 1rem 6.25rem;
   /* height: 0; */
-  min-height: 10vh;
+  /* min-height: 10vh; */
   overflow: hidden;
   z-index: 1;
 }
@@ -1865,15 +1865,7 @@ svg {
     margin: 4.5rem;
   }
 }
-@media (max-width: 900px) {
-  body {
-    display: none;
-  }
-  .first-container {
-    margin-top: 8rem;
-    background-color: #000000;
-  }
-}
+
 /* 
 
 
